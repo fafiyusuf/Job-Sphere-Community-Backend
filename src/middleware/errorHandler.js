@@ -8,5 +8,6 @@ const errorHandler = (err, req, res, next) => {
         response.stack = err.stack;
     }
     res.status(statusCode).json(response);
+    next();
     }
     export default errorHandler;

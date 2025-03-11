@@ -1,7 +1,7 @@
 import express from 'express';
 import { createJob, deleteJobs, getJob, getJobById, Updatejobs } from '../controllers/jobController.js';
 import errorHandler from '../middleware/errorHandler.js';
-import validateJob from '../middleware/validator.js';
+import { validateJob } from '../middleware/validator.js';
 
 const jobRouter = express.Router();
 
